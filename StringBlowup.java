@@ -44,8 +44,8 @@ public class StringBlowup {
 				finalString = finalString + userString.charAt(character);
 			}
 		}
-		if(Character.isLetter(userString.length()-1)) {
-			//Check if last character needs to be removed
+		//Check if last character needs to be removed
+		if(Character.isLetter(userString.charAt(userString.length()-1))) {
 			finalString = finalString + userString.charAt(userString.length()-1);
 		}
 		System.out.println("The blown up string is: " + finalString);
